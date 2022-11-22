@@ -1,0 +1,559 @@
+using System;
+
+namespace CalculatorForMultiValues
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double num, num1, num2, num3, num4,option1,result;
+            char opr,opr1,opr2,opr3,opr4;
+            Console.WriteLine("Enter Number");
+             num = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Operator");
+             opr = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Enter Number");
+             num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Do You want to proceed \n For Yes :: 1\n For No :: 2");
+             option1=Convert.ToInt32(Console.ReadLine());
+
+            if (option1 == 1)
+            {
+                Console.WriteLine("Enter Operator");
+                opr1=Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Enter Number");
+                num2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Do You want to proceed \n For Yes :: 1\n For No :: 2");
+                option1 = Convert.ToInt32(Console.ReadLine());
+                if(option1 == 1)
+                {
+                    Console.WriteLine("Enter Operator");
+                    opr2 = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine("Enter Number");
+                    num3 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Do You want to proceed \n For Yes :: 1\n For No :: 2");
+                    option1 = Convert.ToInt32(Console.ReadLine());
+                    if (option1 == 1)
+                    {
+
+                    }
+                    else if (option1 == 2)
+                    {
+                        Console.WriteLine($"Your equation :: {num}{opr}{num1}{opr1}{num2}{opr2}{num3}");
+                        if (opr == '+')
+                        {
+                            if (opr1 == '+')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num + num1 + num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num + num1 + num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num + num1 + num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num + num1 + num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '-')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num + num1 - num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num + num1 - num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num + num1 - num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num + num1 -num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '*')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num + num1 * num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num + num1 * num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num + num1 * num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num + num1 * num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '/')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num + num1 / num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num + num1 / num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num + num1 / num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num + num1 / num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else { Console.WriteLine("Invalid Operation"); }
+
+                        }
+                        else if (opr == '-')
+                        {
+                            if (opr1 == '+')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num - num1 + num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num - num1 + num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num - num1 + num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num - num1 + num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '-')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num - num1 - num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num - num1 - num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num - num1 - num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num - num1 - num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '*')
+                            {
+                                result = num - num1 * num2;
+                                Console.WriteLine($"Solution :: {result}");
+                            }
+                            else if (opr1 == '/')
+                            {
+                                result = num - num1 / num2;
+                                Console.WriteLine($"Solution :: {result}");
+                            }
+                            else
+                            { Console.WriteLine("Invalid Operation"); }
+                        }
+                        else if (opr == '*')
+                        {
+                            if (opr1 == '+')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num * num1 + num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num * num1 + num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num * num1 + num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num * num1 + num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '-')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num * num1 - num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num * num1 - num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num * num1 - num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num * num1 - num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '*')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num * num1 * num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num * num1 * num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num * num1 * num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num * num1 * num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '/')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num * num1 / num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num * num1 /num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num * num1 / num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num * num1 /num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else { Console.WriteLine("Invalid Operation"); }
+                        }
+                        else if (opr == '/')
+                        {
+                            if (opr1 == '+')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num / num1 + num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num / num1 + num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num / num1 + num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num / num1 + num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '-')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num / num1 - num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num / num1 - num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num / num1 - num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num / num1 - num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '*')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num / num1 * num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num / num1 * num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num / num1 * num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num / num1 * num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else if (opr1 == '/')
+                            {
+                                if (opr2 == '+')
+                                {
+                                    result = num / num1 / num2 + num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '-')
+                                {
+                                    result = num / num1 / num2 - num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '*')
+                                {
+                                    result = num / num1 / num2 * num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else if (opr2 == '/')
+                                {
+                                    result = num / num1 / num2 / num3;
+                                    Console.WriteLine($"Solution :: {result}");
+                                }
+                                else { Console.WriteLine("Invalid Operation"); }
+                            }
+                            else
+                            { Console.WriteLine("Invalid Operation"); }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid Selection");
+                    }
+                }
+                else if (option1==2)
+                {
+                    Console.WriteLine($"Your equation :: {num}{opr}{num1}{opr1}{num2}");
+                    if (opr == '+')
+                    {
+                        if (opr1 == '+')
+                        {
+                            result = num + num1 + num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if(opr1 == '-')
+                        {
+                            result = num + num1 - num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '*')
+                        {
+                            result = num + num1 * num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '/')
+                        {
+                            result = num + num1 / num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else { Console.WriteLine("Invalid Operation"); }
+                      
+                    }
+                    else if (opr == '-')
+                    {
+                        if (opr1 == '+')
+                        {
+                            result = num - num1 + num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '-')
+                        {
+                            result = num - num1 - num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '*')
+                        {
+                            result = num - num1 * num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '/')
+                        {
+                            result = num - num1 / num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else 
+                        { Console.WriteLine("Invalid Operation"); }
+                    }
+                    else if (opr == '*')
+                    {
+                        if (opr1 == '+')
+                        {
+                            result = num * num1 + num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '-')
+                        {
+                            result = num * num1 - num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '*')
+                        {
+                            result = num * num1 * num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '/')
+                        {
+                            result = num * num1 / num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else { Console.WriteLine("Invalid Operation"); }
+                    }
+                    else if (opr == '/')
+                    {
+                        if (opr1 == '+')
+                        {
+                            result = num / num1 + num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '-')
+                        {
+                            result = num / num1 - num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '*')
+                        {
+                            result = num / num1 * num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else if (opr1 == '/')
+                        {
+                            result = num / num1 / num2;
+                            Console.WriteLine($"Solution :: {result}");
+                        }
+                        else
+                        { Console.WriteLine("Invalid Operation"); }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Selection");
+                }
+            } 
+                else if (option1 == 2)
+                {
+
+                   Console.WriteLine($"Your equation :: {num}{opr}{num1}");
+                   if (opr == '+')
+                {
+                    result = num + num1;
+                    Console.WriteLine($"Solution :: {result}");
+                }
+                   else if (opr == '-')
+                {
+                    result = num - num1;
+                    Console.WriteLine($"Solution :: {result}");
+                }
+                   else if (opr == '*')
+                {
+                    result = num * num1;
+                    Console.WriteLine($"Solution :: {result}");
+                }
+                   else if (opr == '/')
+                {
+                    result = num / num1;
+                    Console.WriteLine($"Solution :: {result}");
+                }
+                   else
+                {
+                    Console.WriteLine("Invalid Operation");
+                }
+                }
+            else
+            {
+                Console.WriteLine("Invalid Selection");
+            }
+
+
+        }
+    }
+}
